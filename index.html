@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Utils</title>
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./resources/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" width="40" height="40" alt="logo">
+                Pokemon Utils
+            </a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Frame Calibration</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">for Pokemon Gen III</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="my-form">
+                    <div class="mb-3">
+                        <label for="target-frame" class="form-label">Target Frame</label>
+                        <input type="number" name="target-frame" step="1" id="target-frame" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="initial-frame" class="form-label">Initial Frame</label>
+                        <input type="number" name="initial-frame" step="1" id="initial-frame" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="frame-hit" class="form-label">Frame Hit</label>
+                        <input type="number" name="frame-hit" step="1" id="frame-hit" class="form-control">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button onclick="calculateCalibration()" class="btn btn-primary">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="calibration">Calibration</label>
+                    <input type="number" name="calibration" id="calibration" readonly class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./resources/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
